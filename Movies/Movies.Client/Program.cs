@@ -1,7 +1,7 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
-using Movie.Client.Interfaces;
-using Movie.Client.Services;
+using Movies.Client.Interfaces;
+using Movies.Client.Services;
 
 var serviceCollection = new ServiceCollection();
 

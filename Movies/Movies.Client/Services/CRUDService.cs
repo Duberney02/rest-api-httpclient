@@ -1,6 +1,8 @@
-﻿using Movie.Client.Interfaces;
+﻿using Movies.Client.Interfaces;
+using Movies.Client.Models;
+using Newtonsoft.Json;
 
-namespace Movie.Client.Services
+namespace Movies.Client.Services
 {
     public class CRUDService : IIntegrationService
     {
@@ -20,6 +22,8 @@ namespace Movie.Client.Services
         {
             var response = await _httpClient.GetAsync("api/movies");
             response.EnsureSuccessStatusCode();
-         }
+            var content = await response.Content.ReadAsStringAsync();
+            var movies = JsonConvert.DeserializeObject<IEnumerable<Movie>>(content);
+        }
     }
 }

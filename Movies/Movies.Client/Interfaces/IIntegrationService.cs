@@ -1,4 +1,4 @@
-﻿namespace Movie.Client.Interfaces;
+﻿namespace Movies.Client.Interfaces;
 
 public interface IIntegrationService
 {

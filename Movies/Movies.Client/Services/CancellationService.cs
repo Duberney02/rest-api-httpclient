@@ -1,6 +1,6 @@
-﻿using Movie.Client.Interfaces;
+﻿using Movies.Client.Interfaces;
 
-namespace Movie.Client.Services
+namespace Movies.Client.Services
 {
     public class CancellationService : IIntegrationService
     {
