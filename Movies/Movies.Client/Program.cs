@@ -37,5 +37,7 @@ void ConfigureServices(ServiceCollection serviceCollection)
     // scoped lifetime
 
     // For the CRUD demos
-    serviceCollection.AddScoped<IIntegrationService, CRUDService>();
+    //serviceCollection.AddScoped<IIntegrationService, CRUDService>();
+
+    serviceCollection.AddScoped<IIntegrationService, PartialUpdateService>();
 }
