@@ -39,5 +39,9 @@ void ConfigureServices(ServiceCollection serviceCollection)
     // For the CRUD demos
     //serviceCollection.AddScoped<IIntegrationService, CRUDService>();
 
-    serviceCollection.AddScoped<IIntegrationService, PartialUpdateService>();
+    // For the partial update demos
+    //serviceCollection.AddScoped<IIntegrationService, PartialUpdateService>();
+    
+    // For the stream demos
+    serviceCollection.AddScoped<IIntegrationService, StreamService>();
 }
